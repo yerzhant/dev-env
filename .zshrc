@@ -29,10 +29,12 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source ~/.bash_aliases
 
-KUBE_PS1_NS_ENABLE=false
-KUBE_PS1_SYMBOL_USE_IMG=true
-source ~/kube-ps1/kube-ps1.sh
-PROMPT='$(kube_ps1)'$PROMPT
+if [[ -d ~/kube-ps1 ]] then
+	KUBE_PS1_NS_ENABLE=false
+	KUBE_PS1_SYMBOL_USE_IMG=true
+	source ~/kube-ps1/kube-ps1.sh
+	PROMPT='$(kube_ps1)'$PROMPT
+fi
 
 setopt HIST_FIND_NO_DUPS
 
