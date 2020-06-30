@@ -7,6 +7,7 @@ plugins=(
 	aws
 	colored-man-pages
 	docker
+	docker-compose
 	extract
 	flutter
 	git
