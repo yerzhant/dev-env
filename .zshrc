@@ -30,6 +30,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source ~/.bash_aliases
 
+eval $(dircolors)
+
 if [[ -d ~/kube-ps1 ]] then
 	KUBE_PS1_NS_ENABLE=false
 	KUBE_PS1_SYMBOL_USE_IMG=true
