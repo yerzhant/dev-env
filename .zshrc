@@ -4,7 +4,6 @@ ZSH_THEME="robbyrussell"
 
 plugins=(
 	ansible
-	aws
 	colored-man-pages
 	docker
 	docker-compose
@@ -26,6 +25,10 @@ plugins=(
 	zsh-interactive-cd
 	zsh-syntax-highlighting
 )
+
+if type aws > /dev/null; then
+	plugins+=(aws)
+fi
 
 source $ZSH/oh-my-zsh.sh
 source ~/.bash_aliases
