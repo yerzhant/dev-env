@@ -8,6 +8,7 @@ plugins=(
 	docker
 	docker-compose
 	extract
+	firewalld
 	flutter
 	git
 	gradle
