@@ -22,6 +22,7 @@ plugins=(
 	terraform
 	tmux
 	web-search
+	yum
 	zsh-autosuggestions
 	zsh-interactive-cd
 	zsh-syntax-highlighting
