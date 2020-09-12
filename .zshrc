@@ -32,7 +32,10 @@ if type aws > /dev/null; then
 fi
 
 source $ZSH/oh-my-zsh.sh
-source ~/.bash_aliases
+
+for file in ~/.bash_aliases*; do
+    source "$file"
+done
 
 eval $(dircolors)
 
