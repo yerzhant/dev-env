@@ -17,6 +17,7 @@ plugins=(
 	kubectl
 	last-working-dir
 	npm
+	pip
 	sdk
 	systemd
 	terraform
