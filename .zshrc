@@ -10,6 +10,7 @@ plugins=(
 	extract
 	firewalld
 	flutter
+	gcloud
 	git
 	gradle
 	helm
