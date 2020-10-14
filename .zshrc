@@ -15,7 +15,6 @@ plugins=(
 	gradle
 	helm
 	httpie
-	kubectl
 	last-working-dir
 	npm
 	pip
@@ -32,6 +31,10 @@ plugins=(
 
 if type aws > /dev/null; then
 	plugins+=(aws)
+fi
+
+if type kubectl > /dev/null; then
+	plugins+=(kubectl)
 fi
 
 source $ZSH/oh-my-zsh.sh
