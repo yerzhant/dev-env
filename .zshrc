@@ -23,13 +23,14 @@ plugins=(
 	helm
 	httpie
 	last-working-dir
-	npm
+	# npm
 	pip
 	sdk
 	systemd
 	terraform
 	tmux
 	web-search
+	yarn
 	yum
 	zsh-autosuggestions
 	zsh-interactive-cd
