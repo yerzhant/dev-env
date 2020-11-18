@@ -16,7 +16,7 @@ plugins=(
 	docker-compose
 	extract
 	firewalld
-	flutter
+	#flutter
 	gcloud
 	git
 	gradle
