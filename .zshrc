@@ -51,7 +51,7 @@ for file in ~/.bash_aliases*; do
     source "$file"
 done
 
-if compgen -G "~/.local-rc*" > /dev/null; then
+if ls ~/.local-rc* > /dev/null 2>&1; then
 	for file in ~/.local-rc*; do
 			source "$file"
 	done
