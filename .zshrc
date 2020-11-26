@@ -51,7 +51,11 @@ for file in ~/.bash_aliases*; do
     source "$file"
 done
 
-eval $(dircolors)
+if compgen -G "~/.local-rc*" > /dev/null; then
+	for file in ~/.local-rc*; do
+			source "$file"
+	done
+fi
 
 if [[ -d ~/kube-ps1 ]] then
 	KUBE_PS1_NS_ENABLE=false
