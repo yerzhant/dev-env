@@ -1,0 +1,22 @@
+# docker stack deploy --compose-file docker-compose.yml pgadmin
+version: "3.5"
+services:
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      TZ: Asia/Almaty
+      PGADMIN_DEFAULT_EMAIL: yerzhan.tulepov@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_LISTEN_PORT: 800
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    network_mode: "host"
+    # networks:
+    #   - host
+
+volumes:
+  pgadmin:
+# networks:
+#   host:
+#     external: true
+#     name: host
