@@ -37,10 +37,6 @@ plugins=(
 	zsh-syntax-highlighting
 )
 
-if type aws > /dev/null; then
-	plugins+=(aws)
-fi
-
 if type kubectl > /dev/null; then
 	plugins+=(kubectl)
 fi
