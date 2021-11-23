@@ -16,14 +16,14 @@ plugins=(
 	docker-compose
 	extract
 	firewalld
-	#flutter
+	flutter
 	gcloud
 	git
 	gradle
 	helm
 	httpie
 	last-working-dir
-	# npm
+	npm
 	pip
 	sdk
 	systemd
