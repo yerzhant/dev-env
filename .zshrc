@@ -24,6 +24,7 @@ plugins=(
 	httpie
 	last-working-dir
 	npm
+	nvm
 	pip
 	sdk
 	systemd
