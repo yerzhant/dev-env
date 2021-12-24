@@ -23,6 +23,7 @@ plugins=(
 	helm
 	httpie
 	last-working-dir
+	ng
 	npm
 	nvm
 	pip
