@@ -5,8 +5,8 @@ services:
     image: dpage/pgadmin4
     environment:
       TZ: Asia/Almaty
-      PGADMIN_DEFAULT_EMAIL: yerzhan.tulepov@gmail.com
-      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_USER}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASS}
       PGADMIN_LISTEN_PORT: 800
     volumes:
       - pgadmin:/var/lib/pgadmin
