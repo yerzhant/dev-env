@@ -1,22 +1,26 @@
-# docker stack deploy --compose-file docker-compose.yml pgadmin
-version: "3.5"
+version: "3.8"
 services:
   pgadmin:
     image: dpage/pgadmin4
     environment:
       TZ: Asia/Almaty
-      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_USER}
-      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASS}
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_USER:-}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASS:-}
       PGADMIN_LISTEN_PORT: 800
     volumes:
       - pgadmin:/var/lib/pgadmin
     network_mode: "host"
-    # networks:
-    #   - host
+  
+  mongo-express:
+    image: mongo-express
+    environment:
+      TZ: Asia/Almaty
+      ME_CONFIG_MONGODB_SERVER: ${MONGO_DB_SERVER:-}
+      ME_CONFIG_MONGODB_ADMINUSERNAME: ${MONGO_DB_USERNAME:-}
+      ME_CONFIG_MONGODB_ADMINPASSWORD: ${MONGO_DB_PASSWORD:-}
+      ME_CONFIG_BASICAUTH_USERNAME: ${MONGO_EXPRESS_USERNAME:-}
+      ME_CONFIG_BASICAUTH_PASSWORD: ${MONGO_EXPRESS_PASSWORD:-}
+    network_mode: "host"
 
 volumes:
   pgadmin:
-# networks:
-#   host:
-#     external: true
-#     name: host
