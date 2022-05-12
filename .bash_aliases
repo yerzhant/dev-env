@@ -1,7 +1,6 @@
 alias df='df -h'
 alias fr='free -h'
 alias l='ls -lah'
-alias z=zsh
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias myip2='dig TXT +short o-o.myaddr.l.google.com @ns1.google.com'
 
