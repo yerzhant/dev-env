@@ -1,3 +1,4 @@
+alias z=zsh
 alias df='df -h'
 alias fr='free -h'
 alias l='ls -lah'
