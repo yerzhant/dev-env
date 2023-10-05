@@ -5,3 +5,5 @@ cd /tmp/zsh
 ./Util/preconfig
 ./configure
 sudo make -j 20 install
+
+sudo ln -s com.local.KeyRemapping.plist /Library/LaunchAgents/
