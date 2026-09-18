@@ -13,7 +13,7 @@ plugins=(
 	ansible
 	colored-man-pages
 	docker
-	docker-compose
+	# docker-compose
 	extract
 	firewalld
 	flutter
